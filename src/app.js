@@ -18,6 +18,7 @@ import { openExerciseLibraryManager } from "./ui/exerciseLibraryEditor.js";
 import { loadExercises, getExercise } from "./loaders/exerciseLoader.js";
 import { exSlug } from "./routines/ids.js";
 import { isMobile } from "./utils/device.js";
+import { showFirstTimeRoutineSelection } from "./features/routineManagement.js";
 
 // Check if user is logged in
 if (!currentUser) {
@@ -29,138 +30,14 @@ if (!currentUser) {
   // Check if first-time user (no routines)
   if (Object.keys(userRoutines).length === 0) {
     // Show routine selection modal after app initializes
-    window.addEventListener('load', () => {
-      setTimeout(showFirstTimeRoutineSelection, 500);
+    window.addEventListener('load', async () => {
+      const manifest = await (await fetch("routines/manifest.json")).json();
+      const availableRoutines = manifest.routines || [];
+      setTimeout(() => showFirstTimeRoutineSelection(availableRoutines, () => {
+        window.location.reload();
+      }), 500);
     });
   }
-}
-
-async function showFirstTimeRoutineSelection() {
-  const manifest = await (await fetch("routines/manifest.json")).json();
-  const availableRoutines = manifest.routines || [];
-  
-  if (availableRoutines.length === 0) {
-    alert("No routines available. You can import routines later.");
-    return;
-  }
-  
-  const content = document.createElement("div");
-  
-  const intro = document.createElement("p");
-  intro.style.marginBottom = "20px";
-  intro.textContent = "Welcome! Select which workout routines you'd like to add to your profile:";
-  
-  const checkboxList = document.createElement("div");
-  checkboxList.style.display = "flex";
-  checkboxList.style.flexDirection = "column";
-  checkboxList.style.gap = "12px";
-  checkboxList.style.marginBottom = "20px";
-  
-  const selectedRoutines = new Set();
-  
-  availableRoutines.forEach(routine => {
-    const label = document.createElement("label");
-    label.style.display = "flex";
-    label.style.alignItems = "center";
-    label.style.gap = "12px";
-    label.style.padding = "12px";
-    label.style.background = "var(--menuBg)";
-    label.style.borderRadius = "10px";
-    label.style.cursor = "pointer";
-    label.style.transition = "background 0.2s";
-    
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.style.width = "20px";
-    checkbox.style.height = "20px";
-    checkbox.style.cursor = "pointer";
-    
-    const name = document.createElement("span");
-    name.style.flex = "1";
-    name.style.fontWeight = "500";
-    name.textContent = routine.name;
-    
-    checkbox.onchange = () => {
-      if (checkbox.checked) {
-        selectedRoutines.add(routine);
-        label.style.background = "var(--blue)";
-      } else {
-        selectedRoutines.delete(routine);
-        label.style.background = "var(--menuBg)";
-      }
-    };
-    
-    label.appendChild(checkbox);
-    label.appendChild(name);
-    checkboxList.appendChild(label);
-  });
-  
-  const buttonRow = document.createElement("div");
-  buttonRow.style.display = "flex";
-  buttonRow.style.gap = "12px";
-  buttonRow.style.justifyContent = "flex-end";
-  
-  const skipBtn = document.createElement("button");
-  skipBtn.className = "btn btn-ghost";
-  skipBtn.textContent = "Skip for Now";
-  
-  const addBtn = document.createElement("button");
-  addBtn.className = "btn";
-  addBtn.textContent = "Add Selected Routines";
-  
-  buttonRow.appendChild(skipBtn);
-  buttonRow.appendChild(addBtn);
-  
-  content.appendChild(intro);
-  content.appendChild(checkboxList);
-  content.appendChild(buttonRow);
-  
-  const modal = openModal({ title: "Select Your Routines", content });
-  
-  skipBtn.onclick = () => {
-    modal.close();
-  };
-  
-  addBtn.onclick = async () => {
-    if (selectedRoutines.size === 0) {
-      alert("Please select at least one routine, or click 'Skip for Now'.");
-      return;
-    }
-    
-    for (const routine of selectedRoutines) {
-      try {
-        const response = await fetch(routine.src);
-        const routineData = await response.json();
-        
-        // Use processRoutineDefinition to handle rowsCsvUrl and other formats
-        const { processRoutineDefinition } = await import("./routines/index.js");
-        const processed = await processRoutineDefinition(routineData);
-        
-        if (!processed || !processed.rows || processed.rows.length === 0) {
-          console.error(`Failed to process routine ${routine.name}`);
-          continue;
-        }
-        
-        const id = `user_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-        
-        userRoutines[id] = {
-          id,
-          name: processed.name || routine.name,
-          rows: processed.rows
-        };
-        ensureRowIdsForRoutine(userRoutines[id]);
-        await new Promise(resolve => setTimeout(resolve, 10)); // Small delay for unique IDs
-      } catch (error) {
-        console.error(`Failed to load routine ${routine.name}:`, error);
-      }
-    }
-    
-    stateManager.updateUserRoutines({ ...userRoutines });
-    modal.close();
-    
-    // Reload the page to properly initialize with new routines
-    window.location.reload();
-  };
 }
 
 ensureViewNumbers();
