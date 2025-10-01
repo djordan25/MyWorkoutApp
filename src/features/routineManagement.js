@@ -135,12 +135,16 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
     }
     
     // Force immediate save to localStorage before closing/reloading
-    localStorage.setItem(
-      currentUser ? `workout_userRoutines_${currentUser}` : 'workout_userRoutines',
-      JSON.stringify(userRoutines)
-    );
+    const storageKey = currentUser ? `workout_userRoutines_${currentUser}` : 'workout_userRoutines';
+    const dataToSave = JSON.stringify(userRoutines);
+    localStorage.setItem(storageKey, dataToSave);
+    console.log(`Saved ${Object.keys(userRoutines).length} routines to ${storageKey}`);
+    console.log('userRoutines:', userRoutines);
     
     modal.close();
+    
+    // Small delay to ensure modal closes before reload
+    await new Promise(resolve => setTimeout(resolve, 100));
     
     if (onComplete) {
       onComplete();
@@ -182,16 +186,17 @@ export async function importRoutineFromManifest(manifestEntry) {
   }
   
   const id = routine.id || `user_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-  userRoutines[id] = {
+  const newRoutine = {
     id,
     name: routine.name,
     rows: routineToLegacyRows(routine),
     _structuredData: routine
   };
   
-  ensureRowIdsForRoutine(userRoutines[id]);
+  ensureRowIdsForRoutine(newRoutine);
   
-  return addRoutine(userRoutines[id]);
+  // Add to userRoutines object and let addRoutine handle the save
+  return addRoutine(newRoutine);
 }
 
 /**
