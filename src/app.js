@@ -33,8 +33,10 @@ if (!currentUser) {
     window.addEventListener('load', async () => {
       const manifest = await (await fetch("routines/manifest.json")).json();
       const availableRoutines = manifest.routines || [];
-      setTimeout(() => showFirstTimeRoutineSelection(availableRoutines, () => {
-        window.location.reload();
+      setTimeout(() => showFirstTimeRoutineSelection(availableRoutines, async () => {
+        // Update UI without reloading - proper SPA behavior
+        await rebuildSelectors();
+        scheduleRender();
       }), 500);
     });
   }

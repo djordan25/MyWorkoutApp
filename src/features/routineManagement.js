@@ -10,6 +10,7 @@ import { ensureRowIdsForRoutine } from '../routines/ids.js';
 import { parseCSVFlexible } from '../routines/parseCsv.js';
 import { convertCSVToRoutine, routineToLegacyRows } from '../converters/csvToRoutine.js';
 import { validateRoutine } from '../schemas/routineSchema.js';
+import { USER_ROUTINES_KEY } from '../core/constants.js';
 
 /**
  * Shows routine selection modal for first-time users
@@ -162,13 +163,13 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
       }
     }
     
-    // Save directly to localStorage - no async queue
-    const storageKey = currentUser ? `workout_userRoutines_${currentUser}` : 'workout_userRoutines';
+    // Save directly to localStorage using the correct key
+    const storageKey = currentUser ? `${USER_ROUTINES_KEY}_${currentUser}` : USER_ROUTINES_KEY;
     localStorage.setItem(storageKey, JSON.stringify(userRoutines));
     
     modal.close();
     
-    // Call completion callback which will reload the page
+    // Call completion callback to update UI
     if (onComplete) {
       onComplete();
     }
