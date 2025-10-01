@@ -5,7 +5,6 @@
 
 import { store, view, userRoutines, saveStore, saveView, saveUserRoutines } from './storage.js';
 import { ensureRowState } from './rowState.js';
-import { snack } from '../ui/modal.js';
 
 /**
  * Action result type
@@ -34,7 +33,6 @@ export function updateSet(row, setIndex, data) {
     }
     
     saveStore();
-    snack('Saved');
     
     return { success: true };
   } catch (error) {
@@ -54,7 +52,6 @@ export function toggleExerciseCompletion(row) {
     state.completed = !state.completed;
     
     saveStore();
-    snack('Saved');
     
     // Dispatch event for UI updates
     document.dispatchEvent(new CustomEvent('workout:updated', {
@@ -122,8 +119,6 @@ export function addRoutine(routine) {
       detail: { action: 'add', routine }
     }));
     
-    snack('Routine added');
-    
     return { success: true, data: { routineId: routine.id } };
   } catch (error) {
     console.error('Failed to add routine:', error);
@@ -150,8 +145,6 @@ export function updateRoutine(routineId, updates) {
     document.dispatchEvent(new CustomEvent('routines:changed', {
       detail: { action: 'update', routineId, updates }
     }));
-    
-    snack('Routine updated');
     
     return { success: true };
   } catch (error) {
@@ -196,8 +189,6 @@ export function removeRoutine(routineId, switchToNext = true) {
       detail: { action: 'remove', routineId }
     }));
     
-    snack('Routine removed');
-    
     return { success: true };
   } catch (error) {
     console.error('Failed to remove routine:', error);
@@ -229,7 +220,6 @@ export function clearDay(week, day) {
       }
       
       saveStore();
-      snack('Day cleared');
       
       // Dispatch event
       document.dispatchEvent(new CustomEvent('workout:cleared', {
@@ -254,7 +244,6 @@ export function clearAllData() {
     keys.forEach(key => delete store[key]);
     
     saveStore();
-    snack('All data cleared');
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('data:cleared'));
@@ -275,7 +264,6 @@ export function updateAppTitle(title) {
   try {
     store.__title = title.trim();
     saveStore();
-    snack('Saved');
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('title:changed', {
@@ -303,7 +291,6 @@ export function setExerciseVideo(exerciseName, url) {
     
     store.__exerciseVideos[exerciseName] = url.trim();
     saveStore();
-    snack('Video saved');
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('video:updated', {
@@ -354,8 +341,6 @@ export function importData(data) {
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('data:imported'));
-    
-    snack('Data imported');
     
     return { success: true };
   } catch (error) {

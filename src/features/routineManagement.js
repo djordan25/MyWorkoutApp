@@ -5,7 +5,7 @@
 
 import { userRoutines } from '../core/storage.js';
 import { addRoutine, removeRoutine } from '../core/actions.js';
-import { openModal, snack } from '../ui/modal.js';
+import { openModal } from '../ui/modal.js';
 import { ensureRowIdsForRoutine } from '../routines/ids.js';
 import { parseCSVFlexible } from '../routines/parseCsv.js';
 import { convertCSVToRoutine, routineToLegacyRows } from '../converters/csvToRoutine.js';
@@ -134,7 +134,6 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
       }
     }
     
-    snack(`Added ${selectedRoutines.size} routine${selectedRoutines.size > 1 ? 's' : ''}`);
     modal.close();
     
     if (onComplete) {
@@ -239,8 +238,6 @@ export function importRoutineFromFile(file, onSuccess) {
       
       ensureRowIdsForRoutine(userRoutines[id]);
       addRoutine(userRoutines[id]);
-      
-      snack('Routine imported');
       
       if (onSuccess) {
         onSuccess(id);
