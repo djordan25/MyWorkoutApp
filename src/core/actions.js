@@ -3,7 +3,8 @@
  * All state mutations go through these actions for consistency
  */
 
-import { store, view, userRoutines, saveStore, saveView, saveUserRoutines } from './storage.js';
+import { store, view, userRoutines } from './storage.js';
+import { stateManager } from './stateManager.js';
 import { ensureRowState } from './rowState.js';
 
 /**
@@ -32,7 +33,7 @@ export function updateSet(row, setIndex, data) {
       state.diff[setIndex] = data.diff;
     }
     
-    saveStore();
+    stateManager.updateStore({ ...store });
     
     return { success: true };
   } catch (error) {
@@ -51,7 +52,7 @@ export function toggleExerciseCompletion(row) {
     const state = ensureRowState(row, row.sets);
     state.completed = !state.completed;
     
-    saveStore();
+    stateManager.updateStore({ ...store });
     
     // Dispatch event for UI updates
     document.dispatchEvent(new CustomEvent('workout:updated', {
@@ -82,7 +83,7 @@ export function updateView(updates) {
       view.day = Number(updates.day) || 1;
     }
     
-    saveView();
+    stateManager.updateView({ ...view });
     
     // Dispatch event for UI updates
     document.dispatchEvent(new CustomEvent('view:changed', {
@@ -112,7 +113,7 @@ export function addRoutine(routine) {
     }
     
     userRoutines[routine.id] = routine;
-    saveUserRoutines();
+    stateManager.updateUserRoutines({ ...userRoutines });
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('routines:changed', {
@@ -139,7 +140,7 @@ export function updateRoutine(routineId, updates) {
     }
     
     Object.assign(userRoutines[routineId], updates);
-    saveUserRoutines();
+    stateManager.updateUserRoutines({ ...userRoutines });
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('routines:changed', {
@@ -167,7 +168,7 @@ export function removeRoutine(routineId, switchToNext = true) {
     
     const wasSelected = view.routine === routineId;
     delete userRoutines[routineId];
-    saveUserRoutines();
+    stateManager.updateUserRoutines({ ...userRoutines });
     
     // Auto-switch if needed
     if (wasSelected && switchToNext) {
@@ -180,7 +181,7 @@ export function removeRoutine(routineId, switchToNext = true) {
         });
       } else {
         view.routine = null;
-        saveView();
+        stateManager.updateView({ ...view });
       }
     }
     
@@ -219,7 +220,7 @@ export function clearDay(week, day) {
         delete store.__dates[dateKey];
       }
       
-      saveStore();
+      stateManager.updateStore({ ...store });
       
       // Dispatch event
       document.dispatchEvent(new CustomEvent('workout:cleared', {
@@ -243,7 +244,7 @@ export function clearAllData() {
     const keys = Object.keys(store);
     keys.forEach(key => delete store[key]);
     
-    saveStore();
+    stateManager.updateStore({ ...store });
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('data:cleared'));
@@ -263,7 +264,7 @@ export function clearAllData() {
 export function updateAppTitle(title) {
   try {
     store.__title = title.trim();
-    saveStore();
+    stateManager.updateStore({ ...store });
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('title:changed', {
@@ -290,7 +291,7 @@ export function setExerciseVideo(exerciseName, url) {
     }
     
     store.__exerciseVideos[exerciseName] = url.trim();
-    saveStore();
+    stateManager.updateStore({ ...store });
     
     // Dispatch event
     document.dispatchEvent(new CustomEvent('video:updated', {
@@ -316,7 +317,7 @@ export function importData(data) {
     // Import store
     if (isObj(data.store)) {
       Object.assign(store, data.store);
-      saveStore();
+      stateManager.updateStore({ ...store });
     }
     
     // Import routines
@@ -324,19 +325,19 @@ export function importData(data) {
       const routines = data.userRoutines || data.routines;
       Object.keys(userRoutines).forEach(k => delete userRoutines[k]);
       Object.assign(userRoutines, routines);
-      saveUserRoutines();
+      stateManager.updateUserRoutines({ ...userRoutines });
     }
     
     // Import view
     if (isObj(data.view)) {
       Object.assign(view, data.view);
-      saveView();
+      stateManager.updateView({ ...view });
     }
     
     // Import title
     if (data.title) {
       store.__title = String(data.title);
-      saveStore();
+      stateManager.updateStore({ ...store });
     }
     
     // Dispatch event

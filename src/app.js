@@ -7,7 +7,7 @@ import { createWorkoutCard } from "./ui/workoutCard.js";
 import { neonSelect } from "./ui/select.js";
 import { openModal } from "./ui/modal.js";
 import { updateDrawer } from "./ui/drawer.js";
-import { loadManifest, availableRoutineOptions, ensureRoutineLoaded, isUserRoutineId, currentRoutine, rowsFor, allWeeks, dateKey } from "./routines/index.js";
+import { availableRoutineOptions, isUserRoutineId, currentRoutine, rowsFor, allWeeks, dateKey } from "./routines/index.js";
 import { ensureRowIdsForRoutine } from "./routines/ids.js";
 import { getVideoURLByExercise, setVideoURLByExercise, looksLikeDirectVideo } from "./features/video.js";
 import { getEstMin } from "./features/estimates.js";
@@ -109,7 +109,6 @@ async function rebuildSelectors() {
   if (!routineSelect) {
     routineSelect = neonSelect($("#routineSel"), "Routine", opts, view.routine, async (v) => {
       view.routine = v;
-      if (!isUserRoutineId(v)) await ensureRoutineLoaded(v);
       setWeek(allWeeks()[0] || 1); setDay(1);
       stateManager.updateView({ routine: view.routine, week: view.week, day: view.day });
       await rebuildWeekDaySelectors(); scheduleRender();
@@ -712,11 +711,6 @@ document.addEventListener("routines:changed", async () => {
 window.addEventListener("route:changed", async (e) => {
   const { routine, week, day } = e.detail || {};
   
-  // If routine changed and it's not a user routine, ensure it's loaded
-  if (routine && !isUserRoutineId(routine)) {
-    await ensureRoutineLoaded(routine);
-  }
-  
   // Update selectors to reflect new state
   await rebuildWeekDaySelectors();
   weekSelect && weekSelect.set(view.week);
@@ -734,13 +728,11 @@ Object.values(userRoutines).forEach((rt) => { rt.rows = (rt.rows || []).map((r) 
   // Load exercise library first
   await loadExercises();
   
-  await loadManifest();
   const opts = availableRoutineOptions();
   if (opts.length) {
     if (!view.routine || !userRoutines[view.routine]) {
       view.routine = opts[0].value;
     }
-    // All routines are now user routines, no need to load remote
   }
   
   await rebuildSelectors();

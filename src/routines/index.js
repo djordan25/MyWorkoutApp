@@ -1,54 +1,18 @@
-import { ROUTINE_MANIFEST_URL } from "../core/constants.js";
-import { store, view, userRoutines, saveUserRoutines } from "../core/storage.js";
+import { store, view, userRoutines } from "../core/storage.js";
 import { parseCSVFlexible, refineRow } from "./parseCsv.js";
-import { ensureRowIdsForRoutine, exSlug, simpleHash } from "./ids.js";
+import { ensureRowIdsForRoutine, exSlug } from "./ids.js";
 import { getExercise } from "../loaders/exerciseLoader.js";
-
-let remoteManifest = { routines: [] }; // {id,name,src}[]
-let remoteRoutinesCache = Object.create(null); // id -> {id,name,rows:[]}
 
 export function isUserRoutineId(id) {
   return String(id || "").startsWith("user_");
 }
+
 export function getRoutineById(id) {
-  return userRoutines[id] || remoteRoutinesCache[id] || null;
+  return userRoutines[id] || null;
 }
 
 export function availableRoutineOptions() {
-  // Only return user's added routines, not all remote routines from manifest
-  const local = Object.values(userRoutines).map((r) => ({ value: r.id, label: r.name }));
-  return local;
-}
-
-export async function loadManifest() {
-  try {
-    const res = await fetch(ROUTINE_MANIFEST_URL, { cache: "no-store" });
-    if (res.ok) remoteManifest = await res.json();
-  } catch {
-    /* ignore */
-  }
-}
-
-export async function ensureRoutineLoaded(id) {
-  if (!id) return null;
-  if (remoteRoutinesCache[id] || userRoutines[id]) return getRoutineById(id);
-  const entry = (remoteManifest.routines || []).find((r) => r.id === id);
-  if (!entry) return null;
-  try {
-    const res = await fetch(entry.src, { cache: "no-store" });
-    if (!res.ok) return null;
-    const def = await res.json();
-    const resolved = await processRoutineDefinition(def);
-    if (resolved) {
-      resolved.rows = resolved.rows.map(refineRow);
-      ensureRowIdsForRoutine(resolved);
-      remoteRoutinesCache[id] = resolved;
-      return resolved;
-    }
-  } catch {
-    /* ignore */
-  }
-  return null;
+  return Object.values(userRoutines).map((r) => ({ value: r.id, label: r.name }));
 }
 
 export async function processRoutineDefinition(def) {

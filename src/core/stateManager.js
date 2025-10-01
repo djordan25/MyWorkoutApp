@@ -3,7 +3,19 @@
  * Provides a single source of truth for application state with change notifications
  */
 
-import { store, view, userRoutines, saveStore, saveView, saveUserRoutines } from "./storage.js";
+import { store, view, userRoutines, ensureViewNumbers } from "./storage.js";
+import { STORE_KEY, VIEW_KEY, USER_ROUTINES_KEY } from "./constants.js";
+
+// User-specific storage keys helper
+function getUserKey(baseKey) {
+  const CURRENT_USER_KEY = "workout_current_user";
+  try {
+    const currentUser = localStorage.getItem(CURRENT_USER_KEY);
+    return currentUser ? `${baseKey}_${currentUser}` : baseKey;
+  } catch {
+    return baseKey;
+  }
+}
 
 class StateManager {
   constructor() {
@@ -13,6 +25,46 @@ class StateManager {
       view,
       userRoutines
     };
+    this._saveTask = null;
+    this._needs = { store: false, view: false, userRoutines: false };
+    
+    // Set up save hooks
+    this._setupSaveHooks();
+  }
+  
+  _setupSaveHooks() {
+    const flush = () => this._flush();
+    window.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") flush();
+    });
+    window.addEventListener("pagehide", flush);
+    window.addEventListener("beforeunload", flush);
+  }
+  
+  _flush() {
+    if (this._needs.store) {
+      localStorage.setItem(getUserKey(STORE_KEY), JSON.stringify(this.state.store));
+      this._needs.store = false;
+    }
+    if (this._needs.view) {
+      localStorage.setItem(getUserKey(VIEW_KEY), JSON.stringify(this.state.view));
+      this._needs.view = false;
+    }
+    if (this._needs.userRoutines) {
+      localStorage.setItem(getUserKey(USER_ROUTINES_KEY), JSON.stringify(this.state.userRoutines));
+      this._needs.userRoutines = false;
+    }
+    this._saveTask = null;
+  }
+  
+  _queueSave() {
+    if (this._saveTask) return;
+    const run = () => this._flush();
+    if (typeof requestIdleCallback === "function") {
+      this._saveTask = requestIdleCallback(run, { timeout: 200 });
+    } else {
+      this._saveTask = setTimeout(run, 60);
+    }
   }
 
   /**
@@ -57,7 +109,9 @@ class StateManager {
    */
   updateView(updates) {
     Object.assign(this.state.view, updates);
-    saveView();
+    ensureViewNumbers();
+    this._needs.view = true;
+    this._queueSave();
     this.notify('view');
   }
 
@@ -67,7 +121,8 @@ class StateManager {
    */
   updateStore(updates) {
     Object.assign(this.state.store, updates);
-    saveStore();
+    this._needs.store = true;
+    this._queueSave();
     this.notify('store');
   }
 
@@ -77,7 +132,8 @@ class StateManager {
    */
   updateUserRoutines(updates) {
     Object.assign(this.state.userRoutines, updates);
-    saveUserRoutines();
+    this._needs.userRoutines = true;
+    this._queueSave();
     this.notify('userRoutines');
   }
 
@@ -87,7 +143,8 @@ class StateManager {
    */
   deleteFromStore(keys) {
     keys.forEach(key => delete this.state.store[key]);
-    saveStore();
+    this._needs.store = true;
+    this._queueSave();
     this.notify('store');
   }
 
@@ -97,7 +154,8 @@ class StateManager {
    */
   deleteUserRoutine(id) {
     delete this.state.userRoutines[id];
-    saveUserRoutines();
+    this._needs.userRoutines = true;
+    this._queueSave();
     this.notify('userRoutines');
   }
 
