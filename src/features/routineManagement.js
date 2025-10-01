@@ -22,6 +22,26 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
     return;
   }
   
+  // Load routine data to get names
+  const routinesWithNames = await Promise.all(
+    availableRoutines.map(async (routine) => {
+      try {
+        const response = await fetch(routine.src);
+        const data = await response.json();
+        return {
+          ...routine,
+          name: data.name || routine.id
+        };
+      } catch (error) {
+        console.error(`Failed to load routine ${routine.id}:`, error);
+        return {
+          ...routine,
+          name: routine.id
+        };
+      }
+    })
+  );
+  
   const content = document.createElement('div');
   
   const intro = document.createElement('p');
@@ -36,7 +56,7 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
   
   const selectedRoutines = new Set();
   
-  availableRoutines.forEach(routine => {
+  routinesWithNames.forEach(routine => {
     const label = document.createElement('label');
     label.style.display = 'flex';
     label.style.alignItems = 'center';
@@ -145,7 +165,7 @@ export async function importRoutineFromManifest(manifestEntry) {
     
     routine = convertCSVToRoutine(rows, {
       id: routineData.id || `routine_${Date.now()}`,
-      name: routineData.name || manifestEntry.name
+      name: routineData.name || manifestEntry.id || 'Imported Routine'
     });
   } else {
     throw new Error('Invalid routine format');
