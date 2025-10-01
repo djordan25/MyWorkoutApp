@@ -3,7 +3,7 @@
  * Handles importing, managing, and switching routines
  */
 
-import { userRoutines } from '../core/storage.js';
+import { userRoutines, currentUser } from '../core/storage.js';
 import { addRoutine, removeRoutine } from '../core/actions.js';
 import { openModal } from '../ui/modal.js';
 import { ensureRowIdsForRoutine } from '../routines/ids.js';
@@ -133,6 +133,12 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
         console.error(`Failed to load routine ${routine.name}:`, error);
       }
     }
+    
+    // Force immediate save to localStorage before closing/reloading
+    localStorage.setItem(
+      currentUser ? `workout_userRoutines_${currentUser}` : 'workout_userRoutines',
+      JSON.stringify(userRoutines)
+    );
     
     modal.close();
     
