@@ -125,27 +125,50 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
       return;
     }
     
+    // Disable button to prevent double-clicks
+    addBtn.disabled = true;
+    addBtn.textContent = 'Loading...';
+    
+    // Import all selected routines directly into userRoutines
     for (const routine of selectedRoutines) {
       try {
-        await importRoutineFromManifest(routine);
-        await new Promise(resolve => setTimeout(resolve, 10));
+        const response = await fetch(routine.src);
+        const routineData = await response.json();
+        
+        let processedRoutine;
+        if (routineData.workouts) {
+          processedRoutine = routineData;
+        } else if (routineData.rows) {
+          processedRoutine = convertCSVToRoutine(routineData.rows, {
+            id: routineData.id || `routine_${Date.now()}`,
+            name: routineData.name || routine.id || 'Imported Routine'
+          });
+        } else {
+          throw new Error('Invalid routine format');
+        }
+        
+        const id = processedRoutine.id || `user_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+        userRoutines[id] = {
+          id,
+          name: processedRoutine.name,
+          rows: routineToLegacyRows(processedRoutine),
+          _structuredData: processedRoutine
+        };
+        
+        ensureRowIdsForRoutine(userRoutines[id]);
       } catch (error) {
-        console.error(`Failed to load routine ${routine.name}:`, error);
+        console.error(`Failed to load routine:`, error);
+        alert(`Failed to load ${routine.name}: ${error.message}`);
       }
     }
     
-    // Force immediate save to localStorage before closing/reloading
+    // Save directly to localStorage - no async queue
     const storageKey = currentUser ? `workout_userRoutines_${currentUser}` : 'workout_userRoutines';
-    const dataToSave = JSON.stringify(userRoutines);
-    localStorage.setItem(storageKey, dataToSave);
-    console.log(`Saved ${Object.keys(userRoutines).length} routines to ${storageKey}`);
-    console.log('userRoutines:', userRoutines);
+    localStorage.setItem(storageKey, JSON.stringify(userRoutines));
     
     modal.close();
     
-    // Small delay to ensure modal closes before reload
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
+    // Call completion callback which will reload the page
     if (onComplete) {
       onComplete();
     }
