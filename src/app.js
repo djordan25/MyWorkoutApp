@@ -306,13 +306,33 @@ function openSettings() {
       return;
     }
     
+    // Load routine data to get names
+    const routinesWithNames = await Promise.all(
+      availableRoutines.map(async (routine) => {
+        try {
+          const response = await fetch(routine.src);
+          const data = await response.json();
+          return {
+            ...routine,
+            name: data.name || routine.id
+          };
+        } catch (error) {
+          console.error(`Failed to load routine ${routine.id}:`, error);
+          return {
+            ...routine,
+            name: routine.id
+          };
+        }
+      })
+    );
+    
     // Show selection modal
     const content = document.createElement("div");
     content.style.display = "flex";
     content.style.flexDirection = "column";
     content.style.gap = "8px";
     
-    availableRoutines.forEach(routine => {
+    routinesWithNames.forEach(routine => {
       const alreadyHas = userRoutineIds.some(id => userRoutines[id].name === routine.name);
       
       const btn = document.createElement("button");
