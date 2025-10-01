@@ -74,13 +74,8 @@ export function createWorkoutCard(row, onUpdate) {
   const box = document.createElement("span");
   box.className = "box";
   
-  const txt = document.createElement("span");
-  txt.className = "txt";
-  txt.textContent = "Completed";
-  
   lead.appendChild(cb);
   lead.appendChild(box);
-  lead.appendChild(txt);
   top.appendChild(lead);
 
   // Exercise info
@@ -115,15 +110,9 @@ export function createWorkoutCard(row, onUpdate) {
   info.appendChild(meta);
   top.appendChild(info);
 
-  // Right side (status + actions)
-  const right = document.createElement("div");
-  right.className = "right";
-  
-  const status = document.createElement("span");
-  status.className = cb.checked ? "done" : "status";
-  status.textContent = cb.checked ? "Completed" : "In Progress";
-
+  // Actions (buttons only, no status span)
   const actions = document.createElement("div");
+  actions.className = "actions";
   actions.style.display = "flex";
   actions.style.gap = "8px";
 
@@ -233,16 +222,12 @@ export function createWorkoutCard(row, onUpdate) {
   actions.appendChild(infoBtn);
   actions.appendChild(vidBtn);
   actions.appendChild(editBtn);
-  right.appendChild(status);
-  right.appendChild(actions);
-  top.appendChild(right);
+  top.appendChild(actions);
 
   // Completion checkbox handler
   cb.addEventListener("change", () => {
     const st2 = ensureRowState(row, row.sets);
     st2.completed = cb.checked;
-    status.className = cb.checked ? "done" : "status";
-    status.textContent = cb.checked ? "Completed" : "In Progress";
     card.classList.toggle("is-complete", cb.checked);
     card.querySelectorAll("input.num,input.wt").forEach((el) => (el.disabled = cb.checked));
     card.querySelectorAll(".rad input").forEach((el) => (el.disabled = cb.checked));

@@ -1112,15 +1112,30 @@ h1 {
   }
   
   .card-top {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
     padding: 12px 14px;
+    align-items: start;
   }
   
-  .right {
+  .info {
+    display: contents;
+  }
+  
+  .info .title {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .info .meta {
     grid-column: 1 / -1;
-    gap: 8px;
-    justify-content: space-between;
+    grid-row: 2;
+    margin-top: 8px;
+  }
+  
+  .actions {
+    grid-column: 3;
+    grid-row: 1;
   }
   
   .status,
