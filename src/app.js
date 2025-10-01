@@ -506,6 +506,16 @@ function openSettings() {
 }
 $("#configBtn").onclick = openSettings;
 
+/* Exercise Library (hidden button - triggered from drawer on mobile) */
+const exerciseLibraryBtn = document.createElement('button');
+exerciseLibraryBtn.id = 'exerciseLibraryBtn';
+exerciseLibraryBtn.style.display = 'none';
+document.body.appendChild(exerciseLibraryBtn);
+exerciseLibraryBtn.onclick = () => {
+  closeDrawer();
+  openExerciseLibraryManager();
+};
+
 /* Routine day editor */
 $("#editRoutineBtn").onclick = openDayEditor;
 
