@@ -58,6 +58,7 @@
 html,
 body {
   height: 100%;
+  min-height: 100vh;
   margin: 0;
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Arial, sans-serif;
@@ -70,9 +71,8 @@ body {
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  /* Safe area insets for notched devices */
+  /* Safe area insets for notched devices - only top */
   padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Allow text selection in inputs and content */
@@ -807,6 +807,7 @@ h1 {
   color: #9db3c7;
   font-size: 12px;
   padding: 14px 16px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom));
   border-top: 1px solid var(--border2);
   background: var(--footerBg);
 }
