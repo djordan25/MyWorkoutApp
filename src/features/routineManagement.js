@@ -138,7 +138,48 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
         
         let processedRoutine;
         if (routineData.workouts) {
-          processedRoutine = routineData;
+          // Convert v2 format (exerciseId, targetReps) to canonical format (name, target object)
+          processedRoutine = {
+            ...routineData,
+            workouts: routineData.workouts.map(workout => ({
+              ...workout,
+              exercises: workout.exercises.map(ex => {
+                const exercise = {
+                  name: ex.exerciseId || ex.name || '',
+                  sets: ex.sets || 3,
+                  notes: ex.notes || ''
+                };
+                
+                // Parse targetReps to target object
+                const targetStr = (ex.targetReps || ex.target || '').toString().trim();
+                if (!targetStr || targetStr.toLowerCase() === 'routine') {
+                  exercise.target = { type: 'routine' };
+                } else if (/^\d+\s*to\s*\d+/.test(targetStr)) {
+                  const match = targetStr.match(/(\d+)\s*to\s*(\d+)/);
+                  exercise.target = {
+                    type: 'range',
+                    min: parseInt(match[1]),
+                    max: parseInt(match[2]),
+                    unit: 'reps'
+                  };
+                } else if (/^\d+/.test(targetStr)) {
+                  exercise.target = {
+                    type: 'fixed',
+                    value: parseInt(targetStr),
+                    unit: 'reps'
+                  };
+                } else {
+                  exercise.target = { type: 'routine' };
+                }
+                
+                // Estimate time
+                const setTime = exercise.sets * 1.5;
+                exercise.estimatedMinutes = Math.ceil(setTime);
+                
+                return exercise;
+              })
+            }))
+          };
         } else if (routineData.rows) {
           processedRoutine = convertCSVToRoutine(routineData.rows, {
             id: routineData.id || `routine_${Date.now()}`,
