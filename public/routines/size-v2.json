@@ -1,0 +1,2864 @@
+{
+  "id": "size",
+  "name": "Size Program",
+  "version": "2.0.0",
+  "weeks": 12,
+  "workouts": [
+    {
+      "week": 1,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "25 to 30"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "20 to 30"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "15 to 20"
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "15 to 19"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "90 sec"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "10 to 14"
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "10 to 14"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "75 sec"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "day": 1,
+      "focus": "Chest/Triceps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-bench-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-flye",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "cable-crossover",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "triceps-pressdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "overhead-cable-triceps-extension",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 9,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "day": 2,
+      "focus": "Back/Biceps/Abs",
+      "exercises": [
+        {
+          "exerciseId": "underhand-bent-over-row",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "wide-grip-lat-pulldown",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "seated-cable-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "one-arm-dumbbell-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-curl",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "preacher-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "incline-dumbbell-curl",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hanging-leg-raise",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "cable-crunch",
+          "order": 9,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "day": 3,
+      "focus": "Shoulders/Traps/Calves",
+      "exercises": [
+        {
+          "exerciseId": "dumbbell-shoulder-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "upright-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-lateral-raise",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "rear-delt-flye",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "barbell-shrug",
+          "order": 5,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "dumbbell-shrug",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "standing-calf-raise",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "seated-calf-raise",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "6 to 9"
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "day": 4,
+      "focus": "Legs/Abs",
+      "exercises": [
+        {
+          "exerciseId": "squat",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-press",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "leg-extension",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "romanian-deadlift",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "lying-leg-curl",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "3 to 5"
+        },
+        {
+          "exerciseId": "hip-thrust",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "machine-crunch",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "6 to 9"
+        },
+        {
+          "exerciseId": "plank",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "60 sec"
+        }
+      ]
+    }
+  ]
+}
