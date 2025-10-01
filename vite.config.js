@@ -12,6 +12,15 @@ export default defineConfig({
         // Manual chunk splitting for better caching
         manualChunks: {
           'vendor': ['preact']
+        },
+        // Don't hash these specific assets
+        assetFileNames: (assetInfo) => {
+          // Keep manifest.json, icons, and other PWA assets without hashes
+          if (assetInfo.name === 'manifest.json' || 
+              assetInfo.name.match(/\.(png|ico)$/)) {
+            return '[name][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
         }
       }
     }
