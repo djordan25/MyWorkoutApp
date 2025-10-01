@@ -33,7 +33,15 @@ if (!currentUser) {
     window.addEventListener('load', async () => {
       const manifest = await (await fetch("routines/manifest.json")).json();
       const availableRoutines = manifest.routines || [];
-      setTimeout(() => showFirstTimeRoutineSelection(availableRoutines, async () => {
+      setTimeout(() => showFirstTimeRoutineSelection(availableRoutines, async (addedIds) => {
+        // Set the first routine as active
+        if (addedIds && addedIds.length > 0) {
+          view.routine = addedIds[0];
+          view.week = 1;
+          view.day = 1;
+          stateManager.updateView({ routine: view.routine, week: view.week, day: view.day });
+        }
+        
         // Update UI without reloading - proper SPA behavior
         await rebuildSelectors();
         scheduleRender();

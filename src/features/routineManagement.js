@@ -210,9 +210,16 @@ export async function showFirstTimeRoutineSelection(availableRoutines, onComplet
     
     modal.close();
     
-    // Call completion callback to update UI
+    // Call completion callback with the IDs of added routines
     if (onComplete) {
-      onComplete();
+      const addedIds = Array.from(selectedRoutines).map(r => {
+        // Find the routine ID that was just added for this routine
+        return Object.keys(userRoutines).find(id => 
+          userRoutines[id].name === r.name
+        );
+      }).filter(Boolean);
+      
+      onComplete(addedIds);
     }
   };
 }
