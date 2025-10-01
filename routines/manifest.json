@@ -1,6 +1,6 @@
 {
   "routines": [
-    { "id": "shred", "name": "Shortcut‑to‑Shred + ATG + ARX + Stretch‑It", "src": "routines/shred-v2.json" },
-    { "id": "size",  "name": "Shortcut‑to‑Size + ATG + ARX + Stretch‑It",   "src": "routines/size-v2.json" }
+    { "id": "shred", "src": "routines/shred-v2.json" },
+    { "id": "size",  "src": "routines/size-v2.json" }
   ]
 }
