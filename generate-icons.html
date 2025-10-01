@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Generate App Icons</title>
+    <style>
+        body { font-family: system-ui; padding: 20px; max-width: 600px; margin: 0 auto; }
+        canvas { border: 1px solid #ddd; margin: 10px 0; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Generate Workout App Icons</h1>
+    <p>Click the buttons below to download the app icons for your PWA.</p>
+    
+    <div>
+        <h3>192x192 Icon Preview:</h3>
+        <canvas id="icon192" width="192" height="192"></canvas>
+        <br>
+        <button onclick="downloadIcon(192)">Download icon-192.png</button>
+    </div>
+    
+    <div>
+        <h3>512x512 Icon Preview:</h3>
+        <canvas id="icon512" width="512" height="512"></canvas>
+        <br>
+        <button onclick="downloadIcon(512)">Download icon-512.png</button>
+    </div>
+
+    <script>
+        function drawIcon(canvas) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+            
+            // Background
+            ctx.fillStyle = '#131c2a';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add gradient
+            const gradient = ctx.createLinearGradient(0, 0, 0, size);
+            gradient.addColorStop(0, '#1a2942');
+            gradient.addColorStop(1, '#131c2a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw dumbbell icon
+            const scale = size / 192;
+            ctx.strokeStyle = '#a6c9e8';
+            ctx.fillStyle = '#a6c9e8';
+            ctx.lineWidth = 8 * scale;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            
+            const centerX = size / 2;
+            const centerY = size / 2;
+            const barWidth = size * 0.5;
+            const barHeight = size * 0.06;
+            const weightWidth = size * 0.12;
+            const weightHeight = size * 0.25;
+            
+            // Center bar
+            ctx.fillRect(
+                centerX - barWidth / 2,
+                centerY - barHeight / 2,
+                barWidth,
+                barHeight
+            );
+            
+            // Left weight
+            ctx.fillRect(
+                centerX - barWidth / 2 - weightWidth,
+                centerY - weightHeight / 2,
+                weightWidth,
+                weightHeight
+            );
+            
+            // Right weight
+            ctx.fillRect(
+                centerX + barWidth / 2,
+                centerY - weightHeight / 2,
+                weightWidth,
+                weightHeight
+            );
+            
+            // Add accent bars (gold, blue, red like DS9 bars)
+            const barY = size * 0.85;
+            const barThickness = size * 0.02;
+            const barSpacing = size * 0.025;
+            
+            // Gold
+            ctx.fillStyle = '#d4a574';
+            ctx.fillRect(size * 0.3, barY, size * 0.4, barThickness);
+            
+            // Blue
+            ctx.fillStyle = '#5b9bd5';
+            ctx.fillRect(size * 0.3, barY + barSpacing, size * 0.4, barThickness);
+            
+            // Red
+            ctx.fillStyle = '#c55a5a';
+            ctx.fillRect(size * 0.3, barY + barSpacing * 2, size * 0.4, barThickness);
+        }
+        
+        function downloadIcon(size) {
+            const canvas = document.getElementById(`icon${size}`);
+            const link = document.createElement('a');
+            link.download = `icon-${size}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        // Draw icons on load
+        window.onload = function() {
+            drawIcon(document.getElementById('icon192'));
+            drawIcon(document.getElementById('icon512'));
+        };
+    </script>
+</body>
+</html>

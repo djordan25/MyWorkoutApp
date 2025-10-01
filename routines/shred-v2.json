@@ -1,0 +1,2024 @@
+{
+  "id": "shred",
+  "name": "Shred Program",
+  "version": "2.0.0",
+  "weeks": 6,
+  "workouts": [
+    {
+      "week": 1,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        },
+        {
+          "exerciseId": "stretch-it-shoulders-and-chest-recovery",
+          "order": 7,
+          "sets": 1,
+          "targetReps": "Routine"
+        },
+        {
+          "exerciseId": "stretch-it-wrist-and-forearms-mobility",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        },
+        {
+          "exerciseId": "stretch-it-hips-and-hamstrings-recovery",
+          "order": 11,
+          "sets": 1,
+          "targetReps": "Routine"
+        },
+        {
+          "exerciseId": "stretch-it-ankles-and-calves-mobility",
+          "order": 12,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        },
+        {
+          "exerciseId": "stretch-it-thoracic-spine-and-lats-recovery",
+          "order": 9,
+          "sets": 1,
+          "targetReps": "Routine"
+        },
+        {
+          "exerciseId": "stretch-it-wrist-and-forearms-mobility",
+          "order": 10,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "9 to 11"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "6 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "16 to 20"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 1,
+      "focus": "Chest/Triceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "barbell-bench-press",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "incline-db-bench",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-single-arm-cable-press",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "close-grip-bench-press",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 6,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 2,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "standing-barbell-overhead-press",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat",
+          "order": 4,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "barbell-romanian-deadlift",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "calves-standing-db",
+          "order": 7,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "atg-split-squat",
+          "order": 8,
+          "sets": 3,
+          "targetReps": "5 to 8/leg"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 10,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 3,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "mikolo-lat-pulldown-wideneutral",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "chest-supported-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "incline-db-curl",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "2 to 5"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 4,
+      "focus": "Chest/Triceps",
+      "exercises": [
+        {
+          "exerciseId": "incline-db-fly",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-fly",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-cable-crossover",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-rope-pushdown",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-overhead-rope-extension",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 5,
+      "focus": "Shoulders/Legs/Calves",
+      "exercises": [
+        {
+          "exerciseId": "tibialis-raises",
+          "order": 1,
+          "sets": 3,
+          "targetReps": "15 to 25"
+        },
+        {
+          "exerciseId": "patrickpoliquin-step-down",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "10 to 15/leg"
+        },
+        {
+          "exerciseId": "db",
+          "order": 3,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "rear-delt-high-anchor-row",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-upright-row",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "squatmax-md-belt-squat-high-rep-stance",
+          "order": 6,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "squatmax-md-belted-split-squat",
+          "order": 7,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "calves-standing",
+          "order": 8,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "reverse-nordic",
+          "order": 9,
+          "sets": 2,
+          "targetReps": "5 to 8"
+        },
+        {
+          "exerciseId": "nordic-ham-curl-band-assisted-if-needed",
+          "order": 10,
+          "sets": 2,
+          "targetReps": "3 to 6"
+        },
+        {
+          "exerciseId": "reverse-hyper",
+          "order": 11,
+          "sets": 3,
+          "targetReps": "10 to 20"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "day": 6,
+      "focus": "Back/Traps/Biceps/ARX",
+      "exercises": [
+        {
+          "exerciseId": "lat-pulldown-supinated",
+          "order": 1,
+          "sets": 4,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "seated-cable-row-neutral",
+          "order": 2,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "1-arm-db-row",
+          "order": 3,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "mikolo-face-pull",
+          "order": 4,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "db-shrugs",
+          "order": 5,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "long-length-curl-incline-db",
+          "order": 6,
+          "sets": 3,
+          "targetReps": "21 to 30"
+        },
+        {
+          "exerciseId": "reverse-hyper-light",
+          "order": 7,
+          "sets": 2,
+          "targetReps": "12 to 15"
+        },
+        {
+          "exerciseId": "ab-ripper-x-complete",
+          "order": 8,
+          "sets": 1,
+          "targetReps": "Routine"
+        }
+      ]
+    }
+  ]
+}
